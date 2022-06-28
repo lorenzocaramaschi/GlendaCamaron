@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    text-decoration: none;
+    list-style: none;
+}
+
+*::selection{
+    background-color: #F24444;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+.c-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 0;
+    background-color: #3D1E23;
+    z-index: 3;
+}
+
+.img-header {
+    margin: 1rem auto;
+    border: #D9984A solid 0.25rem;
+    border-radius: 1rem;
+}
+
+.img-quiensoy{
+    width: 40%;
+    margin: 1rem auto;
+}
+
+.c-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.li-header {
+    margin: 0.5rem 3rem;
+    color: #D9984A;
+}
+
+.li-header:hover {
+    color: #D9984A;
+}
+
+.ul-header {
+    display: flex;
+    align-items: center;
+}
+
+.c-main {
+    text-align: center;
+    background-color: #56506A;
+}
+
+.c-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3D1E23;
+    color: #D9984A;
+    padding: 1rem 0rem;
+}
+
+.c-footer p {
+    margin: 0.5rem;
+    text-decoration: underline;
+}
+
+
+.c-footer .redes {
+    margin: 0.5rem;
+}
+
+.productos {}
+
+.bg-amarillo{
+    background-color: #D9984A;
+}
+
+.h3-productos {
+    font-size: 4rem;
+    color: #D9984A;
+}
+
+.p-productos {
+    margin: 0;
+    padding: 0.6rem 0;
+    color: #D9984A;
+}
+
+.h1-cola {
+    color: #D9984A;
+    font-size: 5rem;
+    padding: 1.5rem;
+}
+
+.c-main h2 {
+    color: #D9984A;
+    font-size: 2.5rem;
+}
+
+.carrusel-glen{
+    width: 30%;
+    margin: 1rem auto
+}
+
+
+.carrusel-mate-glen{ 
+        width: 30%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+}
