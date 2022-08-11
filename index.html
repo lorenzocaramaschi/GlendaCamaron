@@ -8,6 +8,7 @@
     <title>Glenda Camaron: artesanías para comprar y regalar a tus seres queridos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="img/logos/logo-glenda.jpg" type="image/x-icon">
@@ -18,64 +19,77 @@
 </head>
 
 <body>
-    <header class="c-header">
-        <img class="img-header" src="img/logos/logo-glenda.jpg" alt="Logo Glenda">
-        <nav class="c-nav">
-            <ul class="ul-header">
-                <a class="li-header" href="#">
-                    <li>Inicio</li>
-                </a>
-                <a class="li-header" href="#quien-soy">
-                    <li>¿Quien soy?</li>
-                </a>
-                <a class="li-header" href="#muñecas">
-                    <li>Muñecas</li>
-                </a>
-                <a class="li-header" href="#cuadros">
-                    <li>Cuadros</li>
-                </a>
-                <a class="li-header" href="#ropa">
-                    <li>Ropa intervenida</li>
-                </a>
-                <a class="li-header" href="#stickers">
-                    <li>Stickers</li>
-                </a>
-                <a class="li-header" href="#mates">
-                    <li>Mates</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-xl navbar-light header-glen">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-header" src="img/logos/logo-glenda.jpg"
+                    alt="Logo Glenda"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown"
+                aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarWithDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quien-soy">¿Quien soy?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Arte
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#cuadros">Cuadros</a></li>
+                            <li><a class="dropdown-item" href="#mates">Mates</a></li>
+                            <li><a class="dropdown-item" href="#muñecas">Muñecas</a></li>
+                            <li><a class="dropdown-item" href="#ropa">Ropa intervenida</a></li>
+                            <li><a class="dropdown-item" href="#stickers">Stickers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main class="c-main">
+
         <h1 class="h1-cola animate__animated animate__fadeInUp">
             Glenda Camarón
         </h1>
+
         <p class="p-productos">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil odit corporis a. Dolor magni consectetur,
-            facereos quo architecto at fugit possimus praesentium placeat qui ex, nesciunt sunt sit, reiciendis labore?
+            🎨​Trabajos personalizados en <strong>Pintura</strong>,<strong>Arte Digital</strong> y
+            <strong>Manualidades</strong>.
         </p>
 
-        <div class="productos" id="quien-soy">
+        <div class="productos  scroll" id="quien-soy">
             <h3 class="h3-productos animate__animated animate__fadeInUp">
                 ¿Quién Soy?
             </h3>
-            <p class="p-productos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam non numquam, ad iusto totam ex
-                nulla, officia saepe voluptatem, blanditiis incidunt unde amet. Fugiat ratione saepe architecto laborum
-                hic!
-            </p>
+            <div class="sobre-mi">
+                <img src="./img/glen-foto.png" alt="foto de Glenda Camarón">
+                <p class="p-productos">
+                    Mi nombre es <strong>Glenda Camarón</strong> y soy una artista urbana! Hago múltiples trabajos tanto
+                    de
+                    diseño digital como manualidades. Comparto mi arte con mucho amor en esta página, y espero que les
+                    guste🥰 Si te interesa conseguir cualquiera de mis artesanías podés contactarme por mi <a
+                        target="_blank" class="a-wpp" href="https://wa.me/5491141968949">Whatsapp</a><i
+                        class='bx bxl-whatsapp'></i>​
+                </p>
+            </div>
+
             <img class="img-quiensoy" src="img/sobre-mi.PNG" alt="sobre mi">
         </div>
 
-        <div class="productos" id="muñecas">
+        <div class="productos scroll" id="muñecas">
             <h3 class="h3-productos animate__animated animate__fadeInUp">
                 Muñequitas
             </h3>
             <p class="p-productos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam non numquam, ad iusto totam ex
-                nulla, officia saepe voluptatem, blanditiis incidunt unde amet. Fugiat ratione saepe architecto laborum
-                hic!
+                🎎​Muñecas tejidas con escarbadientes para llevar como prendedor, llavero o imán. Podés pedir la tuya
+                personalizada, elegir la ropa, los colores y hasta el tamaño!
             </p>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -110,14 +124,12 @@
             </div>
         </div>
 
-        <div class="productos" id="cuadros">
+        <div class="productos scroll" id="cuadros">
             <h3 class="h3-productos animate__animated animate__fadeInUp">
                 Cuadros
             </h3>
             <p class="p-productos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam non numquam, ad iusto totam ex
-                nulla, officia saepe voluptatem, blanditiis incidunt unde amet. Fugiat ratione saepe architecto laborum
-                hic!
+                🖼️Algunos de los cuadros que pinto en mi tiempo libre!
             </p>
             <div id="cuadros-carrusel" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -153,16 +165,12 @@
 
             </div>
 
-            <div class="productos" id="ropa">
+            <div class="productos scroll" id="ropa">
                 <h3 class="h3-productos animate__animated animate__fadeInUp">
                     Ropa intervenida
                 </h3>
                 <p class="p-productos">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam non numquam, ad iusto totam
-                    ex
-                    nulla, officia saepe voluptatem, blanditiis incidunt unde amet. Fugiat ratione saepe architecto
-                    laborum
-                    hic!
+                    👕Ropita a la que le puse un poco de color! Está intervenida con múltiples pinturas.
                 </p>
                 <div id="ropa-carrusel" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -200,16 +208,13 @@
 
             </div>
 
-            <div class="productos" id="stickers">
+            <div class="productos scroll" id="stickers">
                 <h3 class="h3-productos animate__animated animate__fadeInUp">
                     Stickers
                 </h3>
                 <p class="p-productos">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam non numquam, ad iusto totam
-                    ex
-                    nulla, officia saepe voluptatem, blanditiis incidunt unde amet. Fugiat ratione saepe architecto
-                    laborum
-                    hic!
+                    💫​Stickers realizados en Adobe Photoshop y basados de dibujos que originalmente había hecho en
+                    lápiz y papel!
                 </p>
                 <div id="sticker-carrusel" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -247,16 +252,13 @@
 
             </div>
 
-            <div class="productos" id="mates">
+            <div class="productos scroll" id="mates">
                 <h3 class="h3-productos animate__animated animate__fadeInUp">
                     Mates
                 </h3>
                 <p class="p-productos">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam non numquam, ad iusto totam
-                    ex
-                    nulla, officia saepe voluptatem, blanditiis incidunt unde amet. Fugiat ratione saepe architecto
-                    laborum
-                    hic!
+                    ​🧉​Mates de madera tejidos en macramé, excelente opción para regalar con diferentes diseños y
+                    colores!
                 </p>
                 <div id="mate-carrusel" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -267,7 +269,7 @@
                         <button type="button" data-bs-target="#mate-carrusel" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner carrusel-mate-glen">
+                    <div class="carousel-inner carrusel-glen">
                         <div class="carousel-item active">
                             <img src="img/mate1.PNG" class="d-block w-100" alt="">
                         </div>
@@ -295,12 +297,9 @@
 
     <footer class="c-footer">
         <div class="redes">
-            <a href="https://www.instagram.com/glendacamaron/" target="_blank"><img src="img/logos/instagram.png" width="25" height="25"
-                    alt="logo-instagram"></a>
-            <a href="https://es-es.facebook.com/vcaramaschi" target="_blank"><img src="img/logos/facebook.png" width="25" height="25"
-                    alt="logo-facebook"></a>
-            <a href="https://github.com/lorenzocaramaschi" target="_blank"><img src="img/logos/github.png" width="25" height="25"
-                    alt="logo-github"></a>
+            <a href="https://www.instagram.com/pompirinas/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://es-es.facebook.com/vcaramaschi" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://github.com/lorenzocaramaschi" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
         <p>Glenda Camaron ©, todos los derechos reservado</p>
         <p>Política de Privacidad</p>
@@ -309,6 +308,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

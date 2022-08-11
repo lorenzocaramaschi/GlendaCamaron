@@ -6,7 +6,9 @@
     list-style: none;
 }
 
-*::selection{
+
+
+*::selection {
     background-color: #F24444;
     color: white;
 }
@@ -14,6 +16,12 @@
 a {
     text-decoration: none;
     list-style: none;
+    color: #D9984A;
+}
+
+.a-wpp:hover {
+    color: #D9984A;
+    text-decoration: underline;
 }
 
 @font-face {
@@ -21,29 +29,64 @@ a {
     src: url(../fonts/Poppins-Bold.ttf);
 }
 
-.c-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.header-glen {
     top: 0;
     background-color: #3D1E23;
     z-index: 3;
+    position: sticky;
+    padding: 0 7rem;
+}
+
+.dropdown-item,
+.dropdown-menu {
+    background-color: #3D1E23;
+    color: #D9984A;
+}
+
+.nav-link {
+    color: #D9984A;
+    font-size: 1.33rem;
+    transition: 1s all ease;
+}
+
+.nav-link,
+.dropdown-item,
+.dropdown-menu:hover {
+    color: #f0a851 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #1f0f12;
 }
 
 .img-header {
     margin: 1rem auto;
     border: #D9984A solid 0.25rem;
     border-radius: 1rem;
+    width: 50%;
 }
 
-.img-quiensoy{
+.scroll {
+    scroll-behavior: smooth;
+    scroll-margin: 135px;
+}
+
+.img-quiensoy {
     width: 40%;
     margin: 1rem auto;
+    transition: 1s ease;
+
+}
+
+.img-quiensoy:hover {
+    transform: scale(1.01);
+    border-radius: 1rem;
 }
 
 .c-nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .li-header {
@@ -87,13 +130,47 @@ a {
 
 .productos {}
 
-.bg-amarillo{
+.bg-amarillo {
     background-color: #D9984A;
 }
 
 .h3-productos {
     font-size: 4rem;
     color: #D9984A;
+    text-shadow: 4px 4px #3D1E23;
+    transition: 0.5s ease;
+}
+
+.h3-productos:hover {
+    color: #3D1E23;
+    text-shadow: 4px 4px #D9984A;
+}
+
+.sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #3D1E23;
+    margin: auto;
+
+    object-fit: cover;
+    padding: 1rem;
+    transition: 1s ease;
+}
+
+.sobre-mi:hover {
+    transform: scale(1.01);
+    border-radius: 1rem;
+}
+
+.sobre-mi img {
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+body {
+    background-color: #56506A;
 }
 
 .p-productos {
@@ -105,7 +182,14 @@ a {
 .h1-cola {
     color: #D9984A;
     font-size: 5rem;
-    padding: 1.5rem;
+    padding: 0.5rem;
+    text-shadow: 4px 4px #3D1E23;
+    transition: 1s ease;
+}
+
+.h1-cola:hover {
+    color: #3D1E23;
+    text-shadow: 4px 4px #D9984A;
 }
 
 .c-main h2 {
@@ -113,14 +197,114 @@ a {
     font-size: 2.5rem;
 }
 
-.carrusel-glen{
+.carrusel-glen {
     width: 30%;
-    margin: 1rem auto
+    margin: 1rem auto;
+    transition: ease 1s;
+    
+}
+
+.carrusel-glen:hover{
+    border: #1f0f12 0.5rem solid;
+    border-radius: 11rem;
 }
 
 
-.carrusel-mate-glen{ 
-        width: 30%;
-        margin: 0 auto;
-        padding-bottom: 1rem;
+.carrusel-mate-glen {
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+footer .redes a i {
+    font-size: 2rem;
+    transition: 1s ease;
+}
+
+footer .redes a i:hover {
+    transform: scale(1.10);
+    padding: 0 0.5rem;
+    color: #D9984A;
+}
+
+@media (min-width: 481px) and (max-width: 961px) {
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+   .header-glen{
+    padding: 0 1rem;
+   }
+
+    .carrusel-glen {
+        width: 50%;
+    }
+
+    .sobre-mi .p-productos {
+        font-size: 0.85rem;
+        margin: 0.25rem;
+    }
+
+    .img-quiensoy {
+        width: 70%;
+    }
+}
+
+@media (max-width: 481px) {
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .carrusel-glen {
+        width: 70%;
+    }
+
+    .sobre-mi .p-productos {
+        font-size: 0.6rem;
+        margin: 0.25rem;
+    }
+
+    .p-productos {
+        font-size: 0.8rem;
+    }
+
+    .img-quiensoy {
+        width: 90%;
+    }
+
+    .h1-cola {
+        font-size: 2.5rem;
+    }
+
+    .h3-productos {
+        font-size: 2rem;
+    }
+
+    .c-footer {
+        padding: 0.25rem 0;
+    }
+
+    footer p {
+        font-size: 0.6rem;
+    }
+
+    .c-footer p {
+        margin: 4px;
+    }
+
+    .c-footer .redes {
+        margin: 4px;
+    }
+
+    footer .redes a i {
+        font-size: 1.25rem;
+    }
+
+    .header-glen {
+        padding: 0 0.5rem;
+    }
 }
